@@ -1,0 +1,24 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#logo 
+{
+    margin-top: 8px;
+    width: 100px;
+    float: left;
+}
+
+.navbar 
+{
+    max-height: 100vh;
+    overflow-y: scroll;
+    background: #51237F;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0);
+}
+
