@@ -1,8 +1,3 @@
-body
-{
-    margin: 0;
-    padding: 0;
-}
 
 #logo 
 {
@@ -18,7 +13,28 @@ body
     background: #51237F;
 }
 
+@media (min-width: 1000px)
+{
+    #navbarTopbar .navbar-nav>li>a 
+    {
+        color: #fff;
+        font-size: 1.425;
+        line-height: 1.7;
+        padding: 0.6em 1em;
+        font-family: "Crimson",serif;
+        background: #442465;
+    }
+}
 .navbar-light .navbar-toggler {
     border-color: rgba(0, 0, 0, 0);
 }
 
+body
+{
+    margin: 0;
+    padding: 0;
+    color: #434A4F;
+    line-height: 1.3;
+    font-family: "source sans",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
