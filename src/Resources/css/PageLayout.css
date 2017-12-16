@@ -6,40 +6,7 @@
     float: left;
 }
 
-nav
-{
-    position: absolute;
-} 
 
-.navbar 
-{
-    max-height: 100vh;
-    overflow-y: scroll;
-    background: #51237F;
-}
-
-.navbar-nav
-{
-    position: absolute;
-    top: 2.5px;
-    right: 10px;
-}
-
-@media (min-width: 1000px)
-{
-    #navbarTopbar .navbar-nav>li>a 
-    {
-        color: #fff;
-        font-size: 2;
-        line-height: 5;
-        padding: 0em 2em;
-        font-family: "Crimson",serif;
-        background: #442465;
-    }
-}
-.navbar-light .navbar-toggler {
-    border-color: rgba(0, 0, 0, 0);
-}
 
 body
 {
