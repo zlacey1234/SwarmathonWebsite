@@ -11,8 +11,8 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        <script src="../Resources/js/PageFunctions.js"></script>
-
+        <!--<script src="../Resources/js/PageFunctions.js"></script>
+        -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link rel="stylesheet" href="../Resources/css/PageLayout.css">
         <link rel="stylesheet" href="../Resources/css/NavbarTopbar.css">
@@ -23,7 +23,7 @@
     <body>
         <a href="#main-content" class="sr-only">Skip to main content</a>
             <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                <a class="navbar-brand" href="#"><img src="../Resources/png/MontgomeryCollege Logo Test.png" alt="Montgomery College NASA Swarmathon"></a> <!-- "/" becomes the link to the Swarmathon home page-->
+                <a class="navbar-brand" href="#"><img src="../Resources/png/NASA Swarm Logo/PNG Final/Topbar Logo.png" alt="Montgomery College NASA Swarmathon" id="logo"></a> <!-- "/" becomes the link to the Swarmathon home page-->
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTopbar" aria-controls="navbarTopbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,85 +31,136 @@
                 <div class="collapse navbar-collapse" id="navbarTopbar">
                         <a id="pulldown-nav" href="#"></a>
                         <div class="nav">
-                            <ul>
-                                <li>
-                                    <a href="#">Students</a>
-                                    <ul>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                    </ul>
+                            <ul class="first-level">
+                                <li class="first-level-list-item" data-name="About">
+                                    <a class="first-level-list-item-link" href="#">About</a>
+                                    <div class="second-level-list-wrapper">
+                                        <ul class="second-level-list">
+                                            <li class="second-level-list-item">
+                                                <a href="#">Purpose</a>
+                                            </li>
+                                            <li class="second-level-list-item">
+                                                <a href="#">Competition</a>
+                                            </li>
+                                            <li class="second-level-list-item">
+                                                <a href="#">Rules</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li>
-                                    <a href="#">News</a>
-                                    <ul>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                    </ul>
+                                <li class="first-level-list-item" data-name="Students">
+                                    <a class="first-level-list-item-link" href="#">Students</a>
+                                    <div class="second-level-list-wrapper">
+                                        <ul class="second-level-list">
+                                            <li class="second-level-list-item">
+                                                <a href="#">Members</a>
+                                            </li>
+                                            <li class="second-level-list-item">
+                                                <a href="#">Something</a>
+                                            </li>
+                                            <li class="second-level-list-item">
+                                                <a href="#">Something</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li>
-                                    <a href="#">Forms</a>
-                                    <ul>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Sponsors</a>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Ways to Help</a>
-                                            <ul>
-                                                <li><a href="#">Donate Money to Alex</a></li>
-                                                <li><a href="#">something</a></li>
-                                                <li><a href="#">something</a></li>
-                                                <li><a href="#">something</a></li>
+                                <li class="first-level-list-item" data-name="News">
+                                        <a class="first-level-list-item-link" href="#">News</a>
+                                        <div class="second-level-list-wrapper">
+                                            <ul class="second-level-list">
+                                                <li class="second-level-list-item">
+                                                    <a href="#">News</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
                                             </ul>
-                                        </li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                    </ul>
+                                        </div>
                                 </li>
-                                <li>
-                                    <a href="#">Media</a>
-                                    <ul>
-                                        <li><a href="videos">Videos</a></li>
-                                        <li><a href="#">Pictures</a></li>
-                                    </ul>
+                                <li class="first-level-list-item" data-name="Forms">
+                                        <a class="first-level-list-item-link" href="#">Forms</a>
+                                        <div class="second-level-list-wrapper">
+                                            <ul class="second-level-list">
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Forms</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                 </li>
-                                <li>
-                                    <a href="#">Resources</a>
-                                    <ul>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                    </ul>
+                                <li class="first-level-list-item" data-name="Sponsors">
+                                        <a class="first-level-list-item-link" href="#">Sponsors</a>
+                                        <div class="second-level-list-wrapper">
+                                            <ul class="second-level-list">
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Wars to Help</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                 </li>
-                                <li>
-                                    <a href="#">Programs</a>
-                                    <ul>
-                                        <li><a href="#">Community</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                    </ul>
+                                <li class="first-level-list-item" data-name="Media">
+                                        <a class="first-level-list-item-link" href="#">Media</a>
+                                        <div class="second-level-list-wrapper">
+                                            <ul class="second-level-list">
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Media</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                 </li>
-                                <li>
-                                    <a href="#">About</a>
-                                    <ul>
-                                        <li><a href="#">Awards</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                        <li><a href="#">something</a></li>
-                                    </ul>
+                                <li class="first-level-list-item" data-name="Resources">
+                                        <a class="first-level-list-item-link" href="#">Resources</a>
+                                        <div class="second-level-list-wrapper">
+                                            <ul class="second-level-list">
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Resources</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                 </li>
+                                <li class="first-level-list-item" data-name="Programs">
+                                        <a class="first-level-list-item-link" href="#">Programs</a>
+                                        <div class="second-level-list-wrapper">
+                                            <ul class="second-level-list">
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Community</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                                <li class="second-level-list-item">
+                                                    <a href="#">Something</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </li>
+
                             </ul>
                         </div>
                 </div>
