@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Swarmathon 2018 Competition Countdown</title>
+    <style type="text/css">
+        body {
+            background: #f6f6f6;
+        }
+
+        .countdownClock {
+            display: block;
+            width: 550px;
+            text-align: center;
+            background: #ffffff;    
+            font-family: Arial, Helvetica, sans-serif;
+            border: 5px solid #ffffff;
+            padding: 0px;
+            box-shadow: 0 0 5px 3px #ccc;
+        }
+        
+        .deadline {
+            font-size: 40px;
+            margin-top: 50px;
+        }
+
+        #title-purple {
+            font-weight: bold;
+            color: rebeccapurple;
+        }
+        #title-gray {
+            color: dimgray;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="countdownClock">
+        <tr class="deadline">
+            <td colspan="4" id="title-gray"><t id="title-purple">Swarmathon 2018 </t>Competition Countdown</td>
+
+        </tr>
+        <tr class="deadline">
+            <td id="days">125</td>
+            <td id="hours">4</td>
+            <td id="minutes">12</td>
+            <td id="seconds">22</td>
+        </tr>
+        <tr>
+            <td>Days</td>
+            <td>Hours</td>
+            <td>Minutes</td>
+            <td>Seconds</td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+
+        //JavaScript function
+        function countdown() {
+            var today = new Date();
+            var swarmDate = new Date(2018, 03, 17); //n-1 months
+
+            var currentTime = today.getTime();
+            var competitonTime = swarmDate.getTime();
+
+            //Result is in miliseconds
+            var remTime = competitonTime - currentTime;
+
+            //Convert remTime into clock format
+            var s = Math.floor(remTime / 1000);
+            var m = Math.floor(s / 60);
+            var h = Math.floor(m / 60);
+            var d = Math.floor(h / 24);
+
+            h %= 24;
+            m %= 60;
+            s %= 60;
+
+            if (h < 10) {
+                h = "0" + h;
+            }
+            else {
+                h = h;
+            };
+
+            if (m < 10) {
+                m = "0" + m;
+            }
+            else {
+                m = m;
+            };
+
+            if (s < 10) {
+                s = "0" + s;
+            }
+            else {
+                s = s;
+            };
+
+            //Gets the ID  
+            document.querySelector("#days").innerHTML = d;
+            document.querySelector("#hours").innerHTML = h;
+            document.querySelector("#minutes").innerHTML = m;
+            document.querySelector("#seconds").innerHTML = s;
+
+           setTimeout(countdown, 1000);
+        }
+
+       countdown(); 
+    </script>
+</body>
+
+</html>
