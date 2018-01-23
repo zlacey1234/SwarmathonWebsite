@@ -2,22 +2,111 @@ nav
 {
     position: absolute;
 } 
-
 .navbar 
 {
     max-height: 500px;
     background: #51237F;
+    display: block;
+    padding: 0px 0px;
 }
-
-.navbar-nav
+button.navbar-toggler.navbar-toggler-right
 {
+    margin-top: 7px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+}
+span.navbar-toggler-icon
+{
+    width: 50px;
+    height: 50px;
+}
+#navbarTopbar .nav
+{
+    background: #ddd;
+    width: 100%;
+}
+#navbarTopbar .nav .first-level
+{
+    display: block;
+    margin-bottom: 0px;
+    list-style: none;
+    padding: 0px 0px;
+	position: relative;
+	display: inline-table;
+	background: #442465;
+	z-index: 1;
+}
+#navbarTopbar .nav .first-level-list-item 
+{
+    float: left;
+    color: #fff;
+}
+#navbarTopbar .nav .first-level-list-item-link 
+{
+    color: #51237F;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px;
+    padding: 0.95em 3.25em;
+    font-family: "Crimson",serif;
+    background: #ddd;
+    text-align: center;
+}
+#navbarTopbar .nav .second-level-list
+{
+    padding: 0px;
+}
+#navbarTopbar .nav .second-level-list-wrapper{
+    display: none;
     position: absolute;
-    top: 2.5px;
-    right: 10px;
+    width: 125px;
+}
+#navbarTopbar .nav .second-level-list-item{
+    float: none;
+    list-style: none;
+    position: relative;
+    text-align: center;
+	background: rgb(201, 201, 201);
+	color: #51237F;
+}
+#navbarTopbar .nav .first-level-list-item:hover .second-level-list-wrapper{
+    display: block;
+} 
+.navbar-light .navbar-toggler 
+{
+    border-color: rgba(0, 0, 0, 0);
 }
 
-/*@media (min-width: 1000px)
-{*/
+.nav ul ul ul {
+	left: 100%;
+	top: 0;
+}
+.nav ul ul ul li {
+	width: 15em;
+}
+
+#navbarTopbar .nav .first-level-list-item-link:hover 
+{
+    background-color:  rgb(201, 201, 201);
+}
+
+
+/*
+@media (min-width: 1000px)
+{
+    #navbarTopbar .nav>ul
+    {
+        display: flex;
+        list-style: none;
+    }
+
+    #navbarTopbar .nav>ul>li
+    {
+        display: inline;
+        float: right;
+    }
+
     #navbarTopbar .nav>ul>li>a 
     {
         color: #fff;
@@ -25,15 +114,8 @@ nav
         line-height: 5;
         padding: 0em 2em;
         font-family: "Crimson",serif;
-        background: #442465;
+        background: #51237F;
     }
-/*}*/
 
-.navbar-light .navbar-toggler {
-    border-color: rgba(0, 0, 0, 0);
 }
-
-#navbarTopbar .nav>ul
-{
-    list-style: none;
-}
+*/

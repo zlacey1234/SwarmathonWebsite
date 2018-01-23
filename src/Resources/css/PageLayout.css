@@ -1,25 +1,9 @@
 
 #logo 
 {
-    margin-top: 8px;
-    width: 100px;
+    width: 375px;
     float: left;
 }
-
-<<<<<<< HEAD
-=======
-nav
-{
-    position: absolute;
-} 
-
-.navbar 
-{
-    max-height: 100vh;
-    overflow-y: scroll;
-    background: #51237F;
-}
->>>>>>> 8310f4ca7b05b5c4f62f27468db7a8b3b4f33c8c
 
 
 body
