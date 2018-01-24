@@ -1,0 +1,304 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta charset="uft-8" />
+		<title>MC NASA</title>
+		<link rel="shortcut icon" href="/img/NASA Swarm Log.JPG">        
+        <meta name="viewport " content="width=device-width, initial-scale=1.0" />
+       
+
+		<!-- Start of Navigation Bar -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/About.css" />
+		<!--
+		<script>
+			$(document).ready(function() {
+				$("#pulldown-nav").click(function() {
+					$(".nav").toggle();
+				});
+				$(".nav ul li a").click(function(e) {
+					if (e.target == this) {
+						$(this).parent().children("ul").toggle();
+					}
+				});
+			});
+		</script>
+	-->
+		<!-- End of Navigation Bar --> 
+
+		<!-- Slide Show Start -->
+			 <!--javascript loader-->
+           
+			 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        
+			 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+			 <!--<script src="../Resources/js/PageFunctions.js"></script> -->
+
+			 	<!-- CSS for Slide show-->
+
+			 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+			 		<link rel="stylesheet" href="../Resources/css/PageLayout.css">
+			 
+				<!-- End of CSS for Slide Show--> 
+
+
+		<!-- End of Slide Show --> 
+
+
+		<script>
+
+			//JavaScript function
+			function countdown() {
+				var today = new Date();
+				var swarmDate = new Date(2018, 03, 17); //n-1 months
+	
+				var currentTime = today.getTime();
+				var competitonTime = swarmDate.getTime();
+	
+				//Result is in miliseconds
+				var remTime = competitonTime - currentTime;
+	
+				//Convert remTime into clock format
+				var s = Math.floor(remTime / 1000);
+				var m = Math.floor(s / 60);
+				var h = Math.floor(m / 60);
+				var d = Math.floor(h / 24);
+	
+				h %= 24;
+				m %= 60;
+				s %= 60;
+	
+				if (h < 10) {
+					h = "0" + h;
+				}
+				else {
+					h = h;
+				};
+	
+				if (m < 10) {
+					m = "0" + m;
+				}
+				else {
+					m = m;
+				};
+	
+				if (s < 10) {
+					s = "0" + s;
+				}
+				else {
+					s = s;
+				};
+	
+				//Gets the ID  
+				document.querySelector("#days").innerHTML = d;
+				document.querySelector("#hours").innerHTML = h;
+				document.querySelector("#minutes").innerHTML = m;
+				document.querySelector("#seconds").innerHTML = s;
+	
+			   setTimeout(countdown, 1000);
+			}
+	
+		   countdown(); 
+		</script>
+
+
+
+	</head>
+	<body>
+		
+		<!-- Navigation Bar HTML -->	
+
+		<!-- Header-->
+			<div class="Container">
+				<header>
+
+						<img  HEIGHT="70px" WIDTH="70px"src="img/NASA Swarm Logo2.PNG" style="margin-top:2px"/>
+					
+
+						
+					
+				</header>
+
+
+			</div>
+
+
+		<!-- End of Header --> 
+
+				<a id="pulldown-nav" href="#">Menu</a>
+				<div class="nav">
+				
+				
+					<ul>
+						<!-- Logo on Navigation bar-->
+						<!--
+						<li>
+								<a href="#">
+										<span  class="span-logo">
+										<img  HEIGHT="50px" WIDTH="50px"src="img/NASA Swarm Logo.JPG" style="margin-top:-12px"/>
+										</span>
+										</a>
+
+
+						</li>
+						-->
+						<!-- End of Logo in Navigation Bar-->
+						<li>
+							<a href="#">About</a>
+							<ul>
+								<li><a href="#">Purpose</a></li>
+								<li><a href="#">Competition</a></li>
+								<li><a href="#">Rules</a></li>
+								<li><a href="#">Awards </a></li>
+								<li><a href="#">Dennis </a></li>
+								<li><a href="#">something</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Students </a>
+							<ul>
+								<li><a href="#">How to join</a></li>
+								<li><a href="#">Members </a></li>
+								<li><a href="#">something</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">News </a>
+							<ul>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Sponsors</a>
+							<ul>
+								<li>
+									<a href="#">Ways to Help</a>
+									<ul>
+										<li><a href="#">Donate Money to Alex</a></li>
+										<li><a href="#">something</a></li>
+										<li><a href="#">something</a></li>
+										<li><a href="#">something</a></li>
+									</ul>
+								</li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Media</a>
+							<ul>
+								<li><a href="videos">Videos</a></li>
+								<li><a href="#">Pictures</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Resources</a>
+							<ul>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Programs</a>
+							<ul>
+								<li><a href="#">Community</a></li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Gallery</a>
+							<ul>
+								<li><a href="#">Awards</a></li>
+								<li><a href="#">History</a></li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+							</ul>
+						</li>
+						<!--
+						<li>
+							<a href="#">Mars</a>
+							<ul>
+								<li><a href="#">Awards</a></li>
+								<li><a href="#">History</a></li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+								<li><a href="#">something</a></li>
+							</ul>
+						</li>
+					-->
+					</ul>
+				</div>
+		<!-- End of Navigation Bar-->
+
+
+		
+
+		<!-- Start Paralex--> 
+
+		<div class="pimg1">
+			
+		  </div>
+		
+		  <section class="section section-light">
+			<h2>About</h2>
+			<p>
+			  Hi, My name is Alexander 
+			</p>
+		  </section>
+		
+		  <div class="pimg2">
+			<div class="ptext">
+			  <span class="border trans">
+				Image Two Text
+			  </span>
+			</div>
+		  </div>
+		
+		  <section class="section section-dark">
+			<h2>Projects</h2>
+			<p>
+			 idk yet
+			 
+			</p>
+		  </section>
+		
+		  <div class="pimg3">
+			<div class="ptext">
+			  <span class="border trans">
+				Image Three Text
+			  </span>
+			</div>
+		  </div>
+		
+		  <section class="section section-dark">
+			<h2>Donate Money to Alex</h2>
+			<p>
+			  I need money
+			</p>
+		  </section>
+		
+		  <div class="pimg1">
+			<div class="ptext">
+			  <span class="border">
+				NASA Swarmathon
+			  </span>
+			</div>
+		  </div>
+
+
+
+		
+		<!-- End Paralex--> 	
+			
+		
+	</body>
+</html>
